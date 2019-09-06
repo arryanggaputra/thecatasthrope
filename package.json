@@ -1,0 +1,16 @@
+{
+  "name": "the_catastrophe",
+  "version": "1.0.0",
+  "author": "",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass ./src/scss/ -o ./dist/css/ -w -r --source-map-embed --source-map-contents --output-style expanded | node-sass ./src/scss/main.scss ./dist/css/main.min.css -w --output-style compressed"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "flexboxgrid-sass": "^8.0.5",
+    "node-sass": "^4.12.0"
+  }
+}

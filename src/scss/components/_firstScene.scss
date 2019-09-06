@@ -1,0 +1,29 @@
+// Header Scene
+.firstScene {
+  background: $Orange;
+  position: relative;
+  .jumboTitle {
+    position: relative;
+    z-index: 1;
+    padding: 5em 0em 8em 0em;
+    width: 47%;
+    h1 {
+      color: white;
+      font-size: 4.5em;
+      margin-bottom: 1em;
+    }
+  }
+
+  .backgroundImage {
+    position: absolute;
+    bottom: 0px;
+    right: 0rem;
+    z-index: 0;
+    height: 100%;
+    overflow: hidden;
+    img {
+      height: 100%;
+      display: block;
+    }
+  }
+}

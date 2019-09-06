@@ -1,0 +1,97 @@
+//==============================================================================
+// Custom Colors
+//==============================================================================
+$Grey: #c48900 !default;
+$DarkOrange: #f65e44 !default;
+$Orange: #ffb302 !default;
+$Black: #303030 !default;
+$DarkGrey: #525252 !default;
+$DarkBlue: #140e48 !default;
+$Blue: #392ca0 !default;
+$OceanBlue: #bee4ed !default;
+
+$primary-color: $DarkOrange !default;
+$link-color: $primary-color !default;
+$link-hover-color: darken($link-color, 15%) !default;
+
+//==============================================================================
+// Containers
+//==============================================================================
+
+$x-small: 600px !default;
+$small: 850px !default;
+$medium: 1000px !default;
+$large: 1200px !default;
+
+//==============================================================================
+// Breakpoints
+//==============================================================================
+
+$mobile: $x-small !default;
+$tablet: $small !default;
+$desktop: $medium !default;
+
+//==============================================================================
+// Typography
+//==============================================================================
+
+// Body
+$font-size: 1rem !default;
+$body-font-size: 1rem !default;
+$font-style: normal !default;
+$font-variant: normal !default;
+$font-weight: normal !default;
+$font-color: #222 !default;
+$font-family: "Poppins", sans-serif !default;
+$line-height: 1.6 !default;
+
+// Headings
+$heading-font-color: #404040 !default;
+$heading-font-weight: 600 !default;
+$heading-font-family: "Poppins", sans-serif !default;
+$heading-line-height: 1.2 !default;
+$heading-section: 4rem !default;
+$headingsub-section: 1.4rem !default;
+
+// Mobile heading font size
+$h1-mobile: 1.75rem !default;
+$h2-mobile: 1.5rem !default;
+$h3-mobile: 1.25rem !default;
+$h4-mobile: 1.1rem !default;
+$h5-mobile: 1rem !default;
+
+// Heading font size
+$h1: 2.25rem !default;
+$h2: 2rem !default;
+$h3: 1.75rem !default;
+$h4: 1.5rem !default;
+$h5: 1.25rem !default;
+
+//==============================================================================
+// Buttons
+//==============================================================================
+
+$button-background: $primary-color !default;
+$button-background-hover: darken($button-background, 5%) !default;
+$button-color: #ffffff !default;
+$button-font-weight: 600 !default;
+$button-font-family: "Fjalla One", sans-serif !default;
+$button-font-size: 1.5rem !default;
+$button-border-width: 1px !default;
+$button-border-style: solid !default;
+$button-border-color: $button-background !default;
+$button-border-radius: 4px !default;
+$button-text-transform: uppercase !default;
+
+$buttons: (
+  ".button, a.button, button, [type=submit], [type=reset], [type=button]"
+);
+
+//==============================================================================
+// Spacing
+//==============================================================================
+
+$padding: 1rem !default;
+$margins: 1.5rem !default;
+$content-padding: 60px 0 !default;
+$content-padding-mobile: 30px 0 !default;

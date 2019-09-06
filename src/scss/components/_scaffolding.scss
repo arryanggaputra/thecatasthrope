@@ -1,0 +1,163 @@
+/**
+ * Layout
+ */
+
+// HTML base
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height}
+    $font-family;
+  font-size: $font-size;
+}
+
+// Body base
+body {
+  margin: 0px auto;
+  padding: 0px;
+  color: $font-color;
+  background: white;
+  font-size: $body-font-size;
+}
+
+p,
+ol,
+ul,
+dl,
+table {
+  margin: 0 0 $margins 0;
+}
+
+// Remove extra margin for nested lists
+ul li ul {
+  margin-bottom: 0;
+}
+
+ol li ol {
+  margin-bottom: 0;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: $margins 0;
+  font-weight: $heading-font-weight;
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  color: $heading-font-color;
+
+  &:not(:first-child) {
+    margin: 1.5rem 0;
+  }
+}
+
+// Increased margin on additional headings
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child) {
+  margin-top: 2rem;
+}
+
+// Heading individual styles
+h1 {
+  font-size: $h1-mobile;
+}
+
+h2 {
+  font-size: $h2-mobile;
+}
+
+h3 {
+  font-size: $h3-mobile;
+}
+
+h4 {
+  font-size: $h4-mobile;
+}
+
+h5 {
+  font-size: $h5-mobile;
+}
+
+@include small-breakpoint {
+  // Increased margin on additional headings
+  h1:not(:first-child),
+  h2:not(:first-child),
+  h3:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+
+  // Heading desktop individual styles
+  h1 {
+    font-size: $h1;
+  }
+
+  h2 {
+    font-size: $h2;
+  }
+
+  h3 {
+    font-size: $h3;
+  }
+
+  h4 {
+    font-size: $h4;
+  }
+
+  h5 {
+    font-size: $h5;
+  }
+}
+
+// Link styling
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+// Full container
+.full-container {
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+// Container
+.container {
+  max-width: $large;
+  padding: 0 $padding;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Small container
+.small-container {
+  @extend .container;
+  max-width: $small;
+}
+
+// Medium container
+.medium-container {
+  @extend .container;
+  max-width: $medium;
+}
+
+// Content
+.content-section {
+  padding: $content-padding-mobile;
+}
+
+@include small-breakpoint {
+  .content-section {
+    padding: $content-padding;
+  }
+}

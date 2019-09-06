@@ -1,0 +1,60 @@
+.fifthScene {
+  background: $DarkBlue;
+  padding-top: 5em;
+  padding-bottom: 3em;
+  color: white;
+
+  h1 {
+    font-size: $heading-section;
+    color: white;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    padding-bottom: 0em;
+  }
+
+  h4 {
+    line-height: 1.4em;
+    font-weight: normal;
+    color: $Orange;
+    margin: 0px;
+  }
+
+  .formArea {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5em;
+    border-bottom: 1px solid $Blue;
+    .item {
+      flex: 0 0 50%;
+    }
+
+    form {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    padding-top: 2.5em;
+    color: $Blue;
+    .item {
+      flex: 0 0 50%;
+    }
+
+    .links {
+      text-align: right;
+      span {
+        display: inline-block;
+        padding-left: 5em;
+        a {
+          display: inline-block;
+          color: inherit;
+          font-family: "Fjalla One", sans-serif;
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}

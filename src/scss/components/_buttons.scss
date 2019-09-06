@@ -1,0 +1,63 @@
+/**
+ * Buttons
+ */
+
+// Main button styling
+%buttons {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: $button-border-width $button-border-style $button-border-color;
+  border-radius: $button-border-radius;
+  background: $button-background;
+  box-shadow: 0px 3px 0px 0px darken($button-border-color, 20%);
+  color: $button-color;
+  font-weight: $button-font-weight;
+  font-family: $button-font-family;
+  font-size: $button-font-size;
+  text-transform: $button-text-transform;
+  padding: 1rem 2rem;
+  margin: 0 0 0.5rem 0;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+
+// Buttons on hover
+%buttons-hover {
+  border: $button-border-width $button-border-style
+    darken($button-border-color, 10%);
+  background: $button-background-hover;
+  color: $button-color;
+  text-decoration: none;
+}
+
+// Buttons on focus
+%buttons-focus {
+  border: $button-border-width $button-border-style
+    darken($button-border-color, 10%);
+  background: darken($button-background, 10%);
+  color: $button-color;
+  outline: none;
+  text-decoration: none;
+}
+
+// Apply styles to .button class, button element, and button-based inputs
+#{$buttons} {
+  @extend %buttons;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:hover {
+    @extend %buttons-hover;
+  }
+
+  &:focus,
+  &:active {
+    @extend %buttons-focus;
+  }
+}

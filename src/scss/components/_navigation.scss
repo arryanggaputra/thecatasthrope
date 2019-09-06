@@ -1,0 +1,31 @@
+.nav {
+  padding-top: 2em;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  z-index: 1;
+
+  .logo {
+    width: 200px;
+    img {
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-top: 0.3em;
+    li {
+      display: inline-block;
+      a {
+        font-family: "Fjalla One", sans-serif;
+        display: block;
+        padding: 10px 20px;
+        color: $Grey;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+  }
+}

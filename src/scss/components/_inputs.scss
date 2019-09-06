@@ -1,0 +1,16 @@
+input {
+  -webkit-appearance: none;
+  display: inline-block;
+  border-radius: $button-border-radius;
+  background: white;
+  color: #333;
+  font-weight: $button-font-weight;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 1rem 4rem;
+  margin: 0 0 0.5rem 0;
+
+  vertical-align: middle;
+  text-align: left;
+  margin-right: 0.5em;
+}
