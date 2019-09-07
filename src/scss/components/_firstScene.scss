@@ -1,4 +1,22 @@
 // Header Scene
+
+@include small-breakpoint {
+  .firstScene {
+    overflow: hidden;
+    .jumboTitle {
+      width: 100% !important;
+      h1 {
+        font-size: 4em !important;
+        margin-bottom: 1em;
+      }
+    }
+
+    .backgroundImage {
+      left: -10rem !important;
+    }
+  }
+}
+
 .firstScene {
   background: $Orange;
   position: relative;
