@@ -21,6 +21,7 @@
     form {
       width: 100%;
       margin-top: 1em;
+
       input {
         margin-right: 0em !important;
       }
@@ -70,6 +71,9 @@
     }
 
     form {
+      label {
+        display: none;
+      }
       display: flex;
       justify-content: flex-end;
     }
