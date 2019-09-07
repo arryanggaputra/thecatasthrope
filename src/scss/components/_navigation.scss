@@ -1,3 +1,23 @@
+@include small-breakpoint {
+  .nav {
+    flex-direction: column !important;
+    align-items: center;
+
+    ul {
+      margin: 0em;
+      padding: 0em;
+
+      li {
+        a {
+          // color: $DarkOrange !important;
+          text-shadow: 1px 2px #000000ba;
+          padding: 0px 0.5em !important;
+        }
+      }
+    }
+  }
+}
+
 .nav {
   padding-top: 2em;
   display: flex;
