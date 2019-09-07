@@ -1,3 +1,38 @@
+@include small-breakpoint {
+  .thirdScene {
+    overflow: hidden;
+    .jumboTitle {
+      h1 {
+        font-size: $heading-section-mobile !important;
+      }
+    }
+
+    button {
+      position: relative;
+      z-index: 1;
+    }
+
+    .catGallery {
+      width: 100% !important;
+      position: relative;
+      z-index: 1;
+
+      li {
+        flex: 0 0 50% !important;
+        text-align: center;
+        img {
+          width: 89% !important;
+        }
+      }
+    }
+
+    .backgroundImage {
+      right: -0rem !important;
+      height: 25% !important;
+    }
+  }
+}
+
 .thirdScene {
   background: $OceanBlue;
   position: relative;
