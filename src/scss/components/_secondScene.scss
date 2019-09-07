@@ -1,4 +1,23 @@
 // Adopt Scene
+@include small-breakpoint {
+  .secondScene {
+    .jumboTitle {
+      padding: 0px 0em !important;
+      h1 {
+        font-size: $heading-section-mobile !important;
+      }
+      h4 {
+        line-height: 1.4em;
+        font-weight: normal;
+      }
+    }
+
+    .adoptFeature {
+      flex-direction: column !important;
+    }
+  }
+}
+
 .secondScene {
   background: white;
   text-align: center;
