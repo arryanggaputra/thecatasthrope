@@ -1,3 +1,18 @@
+@include small-breakpoint {
+  .fourthScene {
+    .indentArea {
+      padding: 0em 0em 0em 2em !important;
+    }
+    h1 {
+      font-size: $heading-section-mobile !important;
+    }
+    ul {
+      margin: 2em 0em !important;
+      padding-left: 0em !important;
+    }
+  }
+}
+
 .fourthScene {
   background: $Blue;
   color: #bbb6fd;

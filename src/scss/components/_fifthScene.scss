@@ -1,3 +1,44 @@
+@include small-breakpoint {
+  .formArea,
+  .footer,
+  form {
+    flex-direction: column;
+  }
+
+  .footer {
+    .item {
+      flex: 0 0 100% !important;
+      width: 100%;
+      text-align: right;
+    }
+  }
+
+  .formArea {
+    h1 {
+      font-size: $heading-section-mobile !important;
+    }
+
+    form {
+      width: 100%;
+      margin-top: 1em;
+      input {
+        margin-right: 0em !important;
+      }
+    }
+  }
+  .links {
+    span {
+      display: block !important;
+      a {
+        display: inline-block;
+        color: inherit;
+        font-family: "Fjalla One", sans-serif;
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
 .fifthScene {
   background: $DarkBlue;
   padding-top: 5em;
